@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'farmos/project',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '3135d60606e340aea63746434a0630074182aec0',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -622,6 +622,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'drupal/openid_connect' => array(
+            'pretty_version' => '1.4.0',
+            'version' => '1.4.0.0',
+            'reference' => '8.x-1.4',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/openid_connect',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'drupal/role_delegation' => array(
             'pretty_version' => '1.2.0',
             'version' => '1.2.0.0',
@@ -740,9 +749,9 @@
             'dev_requirement' => false,
         ),
         'farmos/project' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '3135d60606e340aea63746434a0630074182aec0',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
