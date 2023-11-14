@@ -10,4 +10,12 @@
  * @see template_preprocess_input()
  */
 #}
-<input{{ attributes }} />{{ children }}
+{%
+  set classes = [
+    'fsa-btn',
+    'fsa-btn--primary'
+  ]
+%}
+
+
+<input{{ attributes.addClass(classes) }} />{{ children }}

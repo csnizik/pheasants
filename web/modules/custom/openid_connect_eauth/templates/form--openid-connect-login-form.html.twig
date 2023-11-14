@@ -1,0 +1,20 @@
+{#
+/**
+ * @file
+ * Theme override for a 'form' element.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The child elements of the form.
+ *
+ * @see template_preprocess_form()
+ */
+#}
+
+<div class="fsa-box fsa-box--br-2">
+<p class="fsa-text-size--4">Single Sign-On</p>
+<div class="fsa-divider fsa-m-b--m"></div>
+<form{{ attributes }}>
+  {{ children }}
+</form>
+</div>
