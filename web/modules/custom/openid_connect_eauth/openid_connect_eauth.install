@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file Remove configuration from OpenID Connect settings form.
+ */
+
+ /**
+  * Implements hook_uninstall()
+  */
+
+  function openid_connect_eauth_uninstall() {
+    // Remove configuration
+    $config = Drupal::config('openid_connect.settings.eauth');
+    if ($config->get('openid_connect.settings.eauth') !== null) {
+      Drupal::configFactory()->getEditable('openid_connect.settings.eauth')->delete()->save();
+    }
+  }
