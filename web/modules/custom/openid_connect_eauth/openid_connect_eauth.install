@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @file Remove configuration from OpenID Connect settings form.
+ * @file Remove configuration from OpenID Connect settings.
  */
 
  /**
