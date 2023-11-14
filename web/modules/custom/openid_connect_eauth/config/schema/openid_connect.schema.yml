@@ -1,4 +1,4 @@
-openid_connect_eauth.settings.eauth:
+openid_connect.settings.eauth:
   type: config_object
   label: 'OpenID Connect eAuth settings'
   mapping:

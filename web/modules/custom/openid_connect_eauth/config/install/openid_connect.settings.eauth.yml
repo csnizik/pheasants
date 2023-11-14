@@ -1,8 +1,8 @@
 enabled: false
 settings:
-  client_id:
-  client_secret:
-  authorization_endpoint: 'https://example.com/oauth2/authorize'
-  token_endpoint: 'https://example.com/oauth2/token'
-  userinfo_endpoint: 'https://example.com/oauth2/UserInfo'
-  redirect_url: ''
+  client_id: 'ADD ID'
+  client_secret: 'ADD SECRET'
+  authorization_endpoint: 'https://example.com/eauth/authorize'
+  token_endpoint: 'https://example.com/eauth/token'
+  userinfo_endpoint: 'https://example.com/eauth/UserInfo'
+  redirect_url: '/new-redirect'
