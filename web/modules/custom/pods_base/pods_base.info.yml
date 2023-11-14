@@ -1,8 +1,0 @@
-name: PODS Base
-type: module
-description: Provides helpers for PODS
-package: Custom
-core_version_requirement: ^10
-css:
-  theme:
-    css/fsa-style.css: {}
