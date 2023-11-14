@@ -15,11 +15,12 @@ web/sites/default/files/js/
 web/sites/default/files/config_*
 
 # Ignore contributed modules and themes
-web/sites/default/modules/contrib/
-web/sites/default/themes/contrib/
-web/modules
-web/th
-!web/modules/custom/
+web/modules/*
+web/themes/*
+
+# Un-ignore custom themes and modules
+!web/themes/custom
+!web/modules/custom
 
 # Ignore default files folder
 # web/sites/default/files/

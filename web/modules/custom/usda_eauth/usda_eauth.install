@@ -1,0 +1,60 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the USDA eAuth module.
+ */
+
+use Drupal\openid_connect\Entity\OpenIDConnectClientEntity;
+
+/**
+ * Implements hook_install().
+ */
+function usda_eauth_install() {
+
+  // Create an OpenID Connect client config entity.
+  // Many of these values (including client_id, client_secret, and endpoints)
+  // will be overridden with values from settings.php.
+  // @see Drupal\usda_eauth\Config\UsdaEAuthConfigOverride::loadOverrides()
+  $client = OpenIDConnectClientEntity::create([
+    'id' => 'generic',
+    'label' => 'USDA eAuth',
+    'plugin' => 'generic',
+    'settings' => [
+      'client_id' => '',
+      'client_secret' => '',
+      'issuer_url' => '',
+      'authorization_endpoint' => '',
+      'token_endpoint' => '',
+      'userinfo_endpoint' => '',
+      'end_session_endpoint' => '',
+      'scopes' => [
+        'openid',
+        'email',
+      ],
+    ],
+  ]);
+  $client->save();
+
+  // Load the OpenID Connect module's configuration settings.
+  $config = \Drupal::configFactory()->getEditable('openid_connect.settings');
+
+  // Display OpenID buttons above user login form.
+  $config->set('user_login_display', 'above');
+
+  // Allow OpenID Connect to register new users.
+  $config->set('override_registration_settings', TRUE);
+
+  // Save config.
+  $config->save();
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function usda_eauth_uninstall() {
+
+  // Delete the generic OpenID Connect client.
+  $client = OpenIDConnectClientEntity::load('generic');
+  $client->delete();
+}

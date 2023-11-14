@@ -1,0 +1,16 @@
+services:
+  usda_eauth.zroles:
+    class: Drupal\usda_eauth\ZRolesUtilities
+  usda_eauth.overrider:
+    class: Drupal\usda_eauth\Config\UsdaEAuthConfigOverride
+    arguments: ['@settings']
+    tags:
+      - { name: config.factory.override, priority: 5 }
+  usda_eauth.route_subscriber:
+    class: Drupal\usda_eauth\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }
+  usda_eauth.responsehandler_subscriber:
+    class: Drupal\usda_eauth\ResponseHandlerSubscriber
+    tags:
+      - { name: event_subscriber }

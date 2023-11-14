@@ -1,0 +1,7 @@
+name: OpenID Connect - USDA eAuth
+type: module
+description: This module adds a USDA eAuth client to OpenID Connect.
+package: Custom
+core_version_requirement: ^10
+dependencies:
+  - openid_connect:openid_connect

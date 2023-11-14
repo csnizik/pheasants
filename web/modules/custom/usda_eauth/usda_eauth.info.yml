@@ -1,0 +1,7 @@
+name: USDA eAuth
+description: Integrates Drupal with USDA's eAuthentication identity provider.
+type: module
+package: Custom
+core_version_requirement: ^10
+dependencies:
+  - openid_connect:openid_connect

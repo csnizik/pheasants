@@ -1,0 +1,64 @@
+<?php
+
+/**
+ * @file
+ * Module file for USDA eAuth.
+ */
+
+use Drupal\Core\Block\BlockPluginInterface;
+use Drupal\usda_eauth\UserLoginBlock;
+use Drupal\user\UserInterface;
+
+/**
+ * Implements hook_openid_connect_post_authorize().
+ */
+function usda_eauth_openid_connect_post_authorize(UserInterface $account, array $context) {
+  $eAuthId = $context['sub']; // eAuthId should be in $context['sub'].
+  $roles = $context['user_data']["usda_app_roles"]; // roles array is in $context['user_data']["usda_app_roles"].
+
+  $session = \Drupal::request()->getSession();
+
+  // set session var to role array
+  $session->set('ApplicationRoleEnumeration', $roles);
+
+  // log some specifics
+  \Drupal::logger('auth_rewrite')->notice("post authorized fired");
+  \Drupal::logger('auth_rewrite')->notice("eAuthId: " . $eAuthId);
+  \Drupal::logger('auth_rewrite')->notice("roles: " . print_r($roles, True));
+  
+  // set eAuthId in session
+  $session = \Drupal::request()->getSession();
+  $session->set('eAuthId', $eAuthId);
+
+  // kick auth processing over to projectAccessHandler entirely for the moment
+  $destination = '/pods';
+  $session->set('openid_connect_destination', $destination);
+}
+
+/**
+ * Implements hook_openid_connect_userinfo_alter().
+ */
+function usda_eauth_openid_connect_userinfo_alter(&$userinfo, array $context) {
+  // If an email address isn't set, generate one automatically from the
+  // eAuth ID and hostname.
+
+  if(empty($context['user_data']['email'])) {      
+    $host = \Drupal::request()->getHost();
+    $eauth_id = $context['user_data']['sub'];
+    
+    $userinfo['email'] = $eauth_id . '@' . $host;
+  } else {
+      // set existing email from eauth
+      $userinfo['email'] = $context['user_data']['email'];
+  }
+
+}
+/**
+ * Implements hook_block_view_alter().
+ */
+function usda_eauth_block_view_alter(array &$build, BlockPluginInterface $block) {
+  // Remove the "Reset your password" link from user login block.
+  if ($block->getBaseId() === 'user_login_block') {
+    $build['#pre_render'][] = [UserLoginBlock::class, 'preRender'];
+  }
+}
