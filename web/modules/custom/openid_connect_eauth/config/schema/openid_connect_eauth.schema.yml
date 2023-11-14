@@ -1,29 +1,29 @@
-openid_connect.settings.eauth:
+openid_connect_eauth.settings.eauth:
   type: config_object
   label: 'OpenID Connect eAuth settings'
   mapping:
     enabled:
       type: boolean
-      label: 'Enabled'
+      label: 'Enable client'
     settings:
       type: mapping
-      label: 'Settings'
       mapping:
         client_id:
           type: string
           label: 'Client ID'
         client_secret:
           type: string
-          label: 'Client Secret'
+          label: 'Client secret'
         authorization_endpoint:
           type: string
-          label: 'Authorization Endpoint'
+          label: 'Authorization endpoint'
         token_endpoint:
           type: string
-          label: 'Token Endpoint'
+          label: 'Token endpoint'
         userinfo_endpoint:
           type: string
-          label: 'Userinfo Endpoint'
+          label: 'Userinfo endpoint'
         redirect_url:
           type: string
           label: 'Redirect URL'
+
