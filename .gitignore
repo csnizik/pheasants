@@ -37,7 +37,7 @@ web/sites/*/files/php/
 *.log
 
 # Ignore Composer vendor folder
-www/vendor/
+vendor/
 
 # Ignore Node.js dependency folder
 node_modules/
