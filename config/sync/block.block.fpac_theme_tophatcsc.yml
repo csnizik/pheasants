@@ -1,0 +1,30 @@
+uuid: bbc3ff2c-3dae-4034-bdad-cc45705a1e28
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:box:297107bf-a604-49b4-82c0-2d3c60c9cc29'
+  module:
+    - block_content
+    - system
+  theme:
+    - fpac_theme
+id: fpac_theme_tophatcsc
+theme: fpac_theme
+region: header
+weight: -7
+provider: null
+plugin: 'block_content:297107bf-a604-49b4-82c0-2d3c60c9cc29'
+settings:
+  id: 'block_content:297107bf-a604-49b4-82c0-2d3c60c9cc29'
+  label: 'Tophat - CSC'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/csc/*'

@@ -1,0 +1,61 @@
+uuid: 28532cc8-36aa-4d52-99be-f27f9c8dfa33
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.award
+    - node.type.awardee_org
+    - node.type.content_page
+    - node.type.log_alley_cropping
+    - node.type.project
+  module:
+    - node
+    - system
+id: nrcs_admin
+label: 'NRCS Administrator'
+weight: 5
+is_admin: null
+permissions:
+  - 'access content'
+  - 'access content overview'
+  - 'create award content'
+  - 'create awardee_org content'
+  - 'create content_page content'
+  - 'create log_alley_cropping content'
+  - 'create project content'
+  - 'delete any award content'
+  - 'delete any awardee_org content'
+  - 'delete any content_page content'
+  - 'delete any log_alley_cropping content'
+  - 'delete any project content'
+  - 'delete award revisions'
+  - 'delete awardee_org revisions'
+  - 'delete content_page revisions'
+  - 'delete log_alley_cropping revisions'
+  - 'delete own award content'
+  - 'delete own awardee_org content'
+  - 'delete own content_page content'
+  - 'delete own log_alley_cropping content'
+  - 'delete own project content'
+  - 'delete project revisions'
+  - 'edit any award content'
+  - 'edit any awardee_org content'
+  - 'edit any content_page content'
+  - 'edit any log_alley_cropping content'
+  - 'edit any project content'
+  - 'edit own award content'
+  - 'edit own awardee_org content'
+  - 'edit own content_page content'
+  - 'edit own log_alley_cropping content'
+  - 'edit own project content'
+  - 'revert award revisions'
+  - 'revert awardee_org revisions'
+  - 'revert content_page revisions'
+  - 'revert log_alley_cropping revisions'
+  - 'revert project revisions'
+  - 'view award revisions'
+  - 'view awardee_org revisions'
+  - 'view content_page revisions'
+  - 'view log_alley_cropping revisions'
+  - 'view own unpublished content'
+  - 'view project revisions'

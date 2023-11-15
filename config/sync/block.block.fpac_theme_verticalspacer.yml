@@ -1,0 +1,30 @@
+uuid: b864b58b-2cb8-4e08-84b6-02ea7e0cfa58
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:box:2848f736-2e8d-4238-8294-5179bd0f0e40'
+  module:
+    - block_content
+    - system
+  theme:
+    - fpac_theme
+id: fpac_theme_verticalspacer
+theme: fpac_theme
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:2848f736-2e8d-4238-8294-5179bd0f0e40'
+settings:
+  id: 'block_content:2848f736-2e8d-4238-8294-5179bd0f0e40'
+  label: 'Vertical Spacer'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/dashboard/*'

@@ -1,0 +1,25 @@
+uuid: 0473cbff-4616-41d8-9b9d-f503955611ec
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:box:22e7f0bd-917a-458f-b0cb-a2027ff02e9f'
+  module:
+    - block_content
+  theme:
+    - stark
+id: stark_createnew
+theme: stark
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:22e7f0bd-917a-458f-b0cb-a2027ff02e9f'
+settings:
+  id: 'block_content:22e7f0bd-917a-458f-b0cb-a2027ff02e9f'
+  label: 'Create New'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

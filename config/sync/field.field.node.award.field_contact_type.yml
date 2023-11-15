@@ -1,0 +1,21 @@
+uuid: 441a9bc3-c781-42cd-aaf3-3842652f74d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact_type
+    - node.type.award
+  module:
+    - options
+id: node.award.field_contact_type
+field_name: field_contact_type
+entity_type: node
+bundle: award
+label: 'Contact Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,21 @@
+uuid: 180a73e0-f435-4ec6-9949-bac533dd05db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_state_territory
+    - node.type.awardee_org
+  module:
+    - options
+id: node.awardee_org.field_state_territory
+field_name: field_state_territory
+entity_type: node
+bundle: awardee_org
+label: 'State or Territory'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

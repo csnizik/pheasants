@@ -1,0 +1,14 @@
+uuid: d7118053-8c60-4319-b7be-4259f2dfa05a
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_map
+_core:
+  default_config_hash: IW93dWLPNFADAqeibJLWcTOXWaiGBXQuE9AnXj2JCTc
+id: enable_side_panel
+label: 'Enable Side Panel'
+description: 'Enables the map side panel and moves the layer switcher into it.'
+library: farm_map/behavior_enable_side_panel
+settings: {  }

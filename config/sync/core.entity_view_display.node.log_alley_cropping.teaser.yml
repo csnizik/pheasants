@@ -1,0 +1,32 @@
+uuid: c35d871a-bc48-459a-b504-ab00227e40d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.log_alley_cropping.field_farm_id
+    - field.field.node.log_alley_cropping.field_field_id
+    - field.field.node.log_alley_cropping.field_species_category
+    - field.field.node.log_alley_cropping.field_species_density
+    - field.field.node.log_alley_cropping.field_state_territory
+    - field.field.node.log_alley_cropping.field_tract_id
+    - node.type.log_alley_cropping
+  module:
+    - user
+id: node.log_alley_cropping.teaser
+targetEntityType: node
+bundle: log_alley_cropping
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_farm_id: true
+  field_field_id: true
+  field_species_category: true
+  field_species_density: true
+  field_state_territory: true
+  field_tract_id: true

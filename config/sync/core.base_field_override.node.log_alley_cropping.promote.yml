@@ -1,0 +1,22 @@
+uuid: 395ccacd-db01-4d7f-849d-a9c63db8270d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.log_alley_cropping
+id: node.log_alley_cropping.promote
+field_name: promote
+entity_type: node
+bundle: log_alley_cropping
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

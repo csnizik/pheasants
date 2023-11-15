@@ -1,0 +1,21 @@
+uuid: fe9074e2-f0c6-4d19-aca0-f1fc7f990fd9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_category
+    - node.type.awardee_org
+  module:
+    - options
+id: node.awardee_org.field_category
+field_name: field_category
+entity_type: node
+bundle: awardee_org
+label: Category
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

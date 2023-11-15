@@ -1,0 +1,6 @@
+always_save_userinfo: 0
+connect_existing_users: 0
+override_registration_settings: 0
+userinfo_mappings:
+  timezone: zoneinfo
+user_login_display: null

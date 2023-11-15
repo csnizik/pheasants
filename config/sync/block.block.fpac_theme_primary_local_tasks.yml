@@ -1,0 +1,22 @@
+uuid: 520fecac-d547-4fe7-9723-1e8224751e5b
+langcode: en
+status: false
+dependencies:
+  theme:
+    - fpac_theme
+_core:
+  default_config_hash: Hh01DLj9k7UnNdPpOQXHZHW7GHf2OPNDQyCJF7_R9ac
+id: fpac_theme_primary_local_tasks
+theme: fpac_theme
+region: header
+weight: -3
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

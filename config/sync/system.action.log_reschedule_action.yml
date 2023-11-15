@@ -1,0 +1,13 @@
+uuid: eee2dee5-3f7d-4d50-98f9-d6dabe0e73d5
+langcode: en
+status: true
+dependencies:
+  module:
+    - log
+_core:
+  default_config_hash: 8a5SMtiLytBH20hCS_cbVKewdmi5jKBNWAj7IY4yLdE
+id: log_reschedule_action
+label: Reschedule
+type: log
+plugin: log_reschedule_action
+configuration: {  }

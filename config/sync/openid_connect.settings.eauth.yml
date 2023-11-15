@@ -1,0 +1,11 @@
+_core:
+  default_config_hash: 2O4JfABDbXxRUr7CQvAjjAV6DXb-Py2FHdzxbXOpPq4
+enabled: true
+settings:
+  client_id: 'ADD ID'
+  client_secret: 'ADD SECRET'
+  authorization_endpoint: 'https://example.com/eauth/authorize'
+  token_endpoint: 'https://example.com/eauth/token'
+  userinfo_endpoint: 'https://example.com/eauth/UserInfo'
+  redirect_url: ''
+  add_additional_fields: ''

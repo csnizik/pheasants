@@ -1,0 +1,22 @@
+uuid: 8f44bb00-19f5-4256-b5d9-aec877b8286d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.awardee_org
+id: node.awardee_org.promote
+field_name: promote
+entity_type: node
+bundle: awardee_org
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

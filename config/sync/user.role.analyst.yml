@@ -1,0 +1,9 @@
+uuid: 3bf5eb3d-ecc0-438f-9c55-9dbe71831c6c
+langcode: en
+status: true
+dependencies: {  }
+id: analyst
+label: Analyst
+weight: 7
+is_admin: null
+permissions: {  }

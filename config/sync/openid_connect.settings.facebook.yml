@@ -1,0 +1,8 @@
+_core:
+  default_config_hash: XE2MqevnEK7g2Hi3bBsxJUUcbYQBm9AjQR6foDyycRY
+enabled: false
+settings:
+  redirect_url: ''
+  client_id: '39393'
+  client_secret: dkdkdkd
+  api_version: v2.12

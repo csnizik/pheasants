@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: l58O_yEXSo-SeJi19LXdzTU1tNJG3lmnIhCitRkM1tk
+langcode: en
+uuid: b37ca40d-18d3-4838-b9a7-ee016cbec46a
+name: PODS2
+mail: test@example.com
+slogan: ''
+page:
+  403: /403
+  404: ''
+  front: /node/1
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

@@ -1,0 +1,14 @@
+uuid: 6603c7c2-a913-4afa-b981-6828f908f1e3
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_map
+_core:
+  default_config_hash: b3BUxizdQJvziq_tJdxRhSUwIxoR8pKybP3UFm_N_dk
+id: geofield
+label: Geofield
+description: 'Renders geofield using farmOS-map.'
+behaviors: {  }
+options: {  }

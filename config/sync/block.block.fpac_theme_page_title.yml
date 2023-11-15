@@ -1,0 +1,20 @@
+uuid: 0363fb78-9c86-4d44-b31f-9bcc946dccc6
+langcode: en
+status: false
+dependencies:
+  theme:
+    - fpac_theme
+_core:
+  default_config_hash: HLQY2xgby8K3vN_98hiOSasOhm9pdCsH234-s0duJ8Q
+id: fpac_theme_page_title
+theme: fpac_theme
+region: header
+weight: -4
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

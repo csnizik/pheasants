@@ -1,0 +1,38 @@
+uuid: 898c5145-16db-4e14-a00c-87580a547138
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:box:661df5b1-342f-47ca-aed7-aadd4b3c9b97'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - fpac_theme
+id: fpac_theme_tophat
+theme: fpac_theme
+region: header
+weight: -8
+provider: null
+plugin: 'block_content:661df5b1-342f-47ca-aed7-aadd4b3c9b97'
+settings:
+  id: 'block_content:661df5b1-342f-47ca-aed7-aadd4b3c9b97'
+  label: Tophat
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/csc/*\r\n/dashboard"
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      sh: sh

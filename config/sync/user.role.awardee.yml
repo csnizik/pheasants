@@ -1,0 +1,9 @@
+uuid: 9eff0bce-a0db-4cc9-9999-6c43daf194a7
+langcode: en
+status: true
+dependencies: {  }
+id: awardee
+label: Awardee
+weight: 6
+is_admin: null
+permissions: {  }

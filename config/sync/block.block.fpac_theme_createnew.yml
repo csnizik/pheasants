@@ -1,0 +1,30 @@
+uuid: 4aff7757-dc43-493d-8601-a1cef23700a0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:box:22e7f0bd-917a-458f-b0cb-a2027ff02e9f'
+  module:
+    - block_content
+    - system
+  theme:
+    - fpac_theme
+id: fpac_theme_createnew
+theme: fpac_theme
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:22e7f0bd-917a-458f-b0cb-a2027ff02e9f'
+settings:
+  id: 'block_content:22e7f0bd-917a-458f-b0cb-a2027ff02e9f'
+  label: 'Create New'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /dashboard

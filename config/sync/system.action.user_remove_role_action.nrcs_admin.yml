@@ -1,0 +1,14 @@
+uuid: 7d845e7f-fc33-4cf9-9f1c-9905611076e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.nrcs_admin
+  module:
+    - user
+id: user_remove_role_action.nrcs_admin
+label: 'Remove the NRCS Administrator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: nrcs_admin

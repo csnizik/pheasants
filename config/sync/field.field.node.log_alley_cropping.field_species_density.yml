@@ -1,0 +1,19 @@
+uuid: 8730acaf-d7ca-45bf-b080-f8e358d82020
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_species_density
+    - node.type.log_alley_cropping
+id: node.log_alley_cropping.field_species_density
+field_name: field_species_density
+entity_type: node
+bundle: log_alley_cropping
+label: 'Species Density'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

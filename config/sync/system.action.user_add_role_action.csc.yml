@@ -1,0 +1,14 @@
+uuid: ea1c5233-3c36-4a76-8d74-51e04d232c56
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.csc
+  module:
+    - user
+id: user_add_role_action.csc
+label: 'Add the CSC role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: csc

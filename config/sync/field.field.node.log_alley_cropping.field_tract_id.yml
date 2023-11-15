@@ -1,0 +1,19 @@
+uuid: 989465de-3097-42cf-a41d-f2d194d74388
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tract_id
+    - node.type.log_alley_cropping
+id: node.log_alley_cropping.field_tract_id
+field_name: field_tract_id
+entity_type: node
+bundle: log_alley_cropping
+label: 'Tract ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

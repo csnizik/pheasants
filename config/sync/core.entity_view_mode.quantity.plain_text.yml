@@ -1,0 +1,15 @@
+uuid: b4b95c5c-4cd0-4c94-9553-114650793710
+langcode: en
+status: true
+dependencies:
+  module:
+    - quantity
+  enforced:
+    module:
+      - quantity
+_core:
+  default_config_hash: GvftmY9vRTdoseQdRxoukvLC7o8Sje5qL9ARfAr4tgI
+id: quantity.plain_text
+label: 'Plain text'
+targetEntityType: quantity
+cache: false

@@ -1,0 +1,23 @@
+uuid: 7bd8c948-825f-430d-8cc6-5ffc108a9fc9
+langcode: en
+status: true
+dependencies:
+  module:
+    - farm_ui_theme
+  theme:
+    - fpac_theme
+  enforced:
+    module:
+      - farm_ui_theme
+id: fpac_theme_farm_powered
+theme: fpac_theme
+region: content
+weight: 1000
+provider: null
+plugin: farm_powered_by_block
+settings:
+  id: farm_powered_by_block
+  label: 'Powered by farmOS'
+  label_display: '0'
+  provider: farm_ui_theme
+visibility: {  }

@@ -1,0 +1,41 @@
+uuid: b92ed3f1-bc91-4fb4-95be-e75d2323a6c2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:box:a675febf-680e-4881-9594-c837a22067a4'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - fpac_theme
+id: fpac_theme_nrcsheadercsc
+theme: fpac_theme
+region: header
+weight: -6
+provider: null
+plugin: 'block_content:a675febf-680e-4881-9594-c837a22067a4'
+settings:
+  id: 'block_content:a675febf-680e-4881-9594-c837a22067a4'
+  label: 'NRCS Header - CSC'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+      farm_account_admin: farm_account_admin
+      authenticated: authenticated
+      csc: csc
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/csc/*'

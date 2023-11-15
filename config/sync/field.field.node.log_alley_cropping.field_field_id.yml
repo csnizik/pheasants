@@ -1,0 +1,19 @@
+uuid: 39529009-567d-4880-8566-f6e40d66f122
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_field_id
+    - node.type.log_alley_cropping
+id: node.log_alley_cropping.field_field_id
+field_name: field_field_id
+entity_type: node
+bundle: log_alley_cropping
+label: 'Field ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,21 @@
+uuid: de3ed0c2-9b60-4b10-8360-50823c174d60
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_state_territory
+    - node.type.log_alley_cropping
+  module:
+    - options
+id: node.log_alley_cropping.field_state_territory
+field_name: field_state_territory
+entity_type: node
+bundle: log_alley_cropping
+label: 'State or Territory'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

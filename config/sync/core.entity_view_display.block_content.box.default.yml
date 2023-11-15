@@ -1,0 +1,24 @@
+uuid: 14d964de-83c2-4282-ae70-9a02c6129edf
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.box
+    - field.field.block_content.box.body
+    - field.field.block_content.box.field_html
+  module:
+    - text
+id: block_content.box.default
+targetEntityType: block_content
+bundle: box
+mode: default
+content:
+  field_html:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true

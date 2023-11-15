@@ -1,0 +1,14 @@
+uuid: 07446cbc-cfed-4ea8-aba1-26d2564711d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.awardee
+  module:
+    - user
+id: user_remove_role_action.awardee
+label: 'Remove the Awardee role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: awardee

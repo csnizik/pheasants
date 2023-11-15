@@ -1,0 +1,22 @@
+uuid: 7bb66cef-893e-4015-989b-ba2d03a947a5
+langcode: en
+status: true
+dependencies:
+  module:
+    - farm_ui_theme
+  theme:
+    - stark
+_core:
+  default_config_hash: OQ9aJ-4qVwK1x00o9EOYK4eFDjQr_HLpbPiJaPSVZiQ
+id: stark_local_actions
+theme: stark
+region: content
+weight: -10
+provider: null
+plugin: farm_local_actions_block
+settings:
+  id: farm_local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: farm_ui_theme
+visibility: {  }

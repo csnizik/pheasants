@@ -1,0 +1,25 @@
+uuid: f0d0089b-9b74-40bf-b637-e53a89dc6972
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:box:8e7859c5-7f71-47f7-a18b-eed6d12b7dd3'
+  module:
+    - block_content
+  theme:
+    - fpac_theme
+id: fpac_theme_spacer
+theme: fpac_theme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: 'block_content:8e7859c5-7f71-47f7-a18b-eed6d12b7dd3'
+settings:
+  id: 'block_content:8e7859c5-7f71-47f7-a18b-eed6d12b7dd3'
+  label: Spacer
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

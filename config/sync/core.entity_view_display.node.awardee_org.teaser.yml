@@ -1,0 +1,28 @@
+uuid: 8eab4683-99b7-4c80-b0db-85c2d3087f55
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.awardee_org.field_acronym
+    - field.field.node.awardee_org.field_category
+    - field.field.node.awardee_org.field_short_name
+    - field.field.node.awardee_org.field_state_territory
+    - node.type.awardee_org
+  module:
+    - user
+id: node.awardee_org.teaser
+targetEntityType: node
+bundle: awardee_org
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_acronym: true
+  field_category: true
+  field_short_name: true
+  field_state_territory: true

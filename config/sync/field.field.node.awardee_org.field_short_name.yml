@@ -1,0 +1,19 @@
+uuid: 1089c88f-6ea0-4ea3-af8d-27b4a48ebbd2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_short_name
+    - node.type.awardee_org
+id: node.awardee_org.field_short_name
+field_name: field_short_name
+entity_type: node
+bundle: awardee_org
+label: 'Short Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

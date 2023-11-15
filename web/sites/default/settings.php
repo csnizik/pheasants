@@ -871,4 +871,4 @@ $databases['default']['default'] = array (
   'driver' => 'pgsql',
   'autoload' => 'core/modules/pgsql/src/Driver/Database/pgsql/',
 );
-$settings['config_sync_directory'] = 'sites/default/files/config_rxtZXSTkFZUkCR62Ci8SUbN1UuPZ4O2DsCwchxIyXo-tQ9-C4NBwmpeE8KrKyyAAhNqsBqy-xQ/sync';
+$settings['config_sync_directory'] = '../config/sync';

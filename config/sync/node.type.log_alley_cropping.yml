@@ -1,0 +1,17 @@
+uuid: cedd3ab7-1156-4be1-9e3b-db6cf2aef962
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Alley Cropping'
+type: log_alley_cropping
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

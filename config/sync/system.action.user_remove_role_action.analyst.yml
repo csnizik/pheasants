@@ -1,0 +1,14 @@
+uuid: 321fbd88-f3fb-41d0-a67b-5d22023b95ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.analyst
+  module:
+    - user
+id: user_remove_role_action.analyst
+label: 'Remove the Analyst role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: analyst

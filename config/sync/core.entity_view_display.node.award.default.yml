@@ -1,0 +1,71 @@
+uuid: ea7dfe6c-a519-4d66-a617-7432f45ad355
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.award.field_awardee
+    - field.field.node.award.field_contact_eauth
+    - field.field.node.award.field_contact_email
+    - field.field.node.award.field_contact_name
+    - field.field.node.award.field_contact_type
+    - field.field.node.award.field_status
+    - node.type.award
+  module:
+    - options
+    - user
+id: node.award.default
+targetEntityType: node
+bundle: award
+mode: default
+content:
+  field_awardee:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_contact_eauth:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_contact_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_contact_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_contact_type:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_status:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

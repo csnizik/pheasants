@@ -1,0 +1,8 @@
+uuid: 5919c8fd-779a-4a7f-813d-171fa2256221
+langcode: en
+status: true
+dependencies: {  }
+id: box
+label: Box
+revision: 0
+description: 'A simple box for content.'

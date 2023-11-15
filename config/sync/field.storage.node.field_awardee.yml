@@ -1,0 +1,19 @@
+uuid: 3ee03093-2c5f-4f87-92de-197d1c785b3f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_awardee
+field_name: field_awardee
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,24 @@
+uuid: d49c9523-ae38-4308-b23d-4067cfa3d60d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.box
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.box.body
+field_name: body
+entity_type: block_content
+bundle: box
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

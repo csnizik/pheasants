@@ -1,0 +1,9 @@
+uuid: d5246fa4-9500-4160-aa64-44c111e42b23
+langcode: en
+status: true
+dependencies: {  }
+id: csc
+label: CSC
+weight: 3
+is_admin: null
+permissions: {  }

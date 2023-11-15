@@ -1,0 +1,14 @@
+uuid: 21f78544-2801-4d98-ab13-c0dd24534e2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.csc
+  module:
+    - user
+id: user_remove_role_action.csc
+label: 'Remove the CSC role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: csc

@@ -1,0 +1,14 @@
+uuid: 13e317a3-3a16-476b-b633-6523eb795f5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.sh
+  module:
+    - user
+id: user_add_role_action.sh
+label: 'Add the SH role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: sh

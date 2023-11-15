@@ -1,0 +1,18 @@
+uuid: 67dc79aa-0bee-401f-b18b-828829ab38a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.awardee_org
+id: node.awardee_org.title
+field_name: title
+entity_type: node
+bundle: awardee_org
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

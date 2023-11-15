@@ -1,0 +1,24 @@
+uuid: 7b1cad62-f1b4-44ff-a8dd-c5693ba0c059
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.box
+    - field.storage.block_content.field_html
+    - filter.format.html
+  module:
+    - text
+id: block_content.box.field_html
+field_name: field_html
+entity_type: block_content
+bundle: box
+label: HTML
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - html
+field_type: text_long

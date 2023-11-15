@@ -1,0 +1,8 @@
+uuid: 454efd6e-e9b8-4ec5-8f62-6094d5b9e39a
+langcode: en
+status: true
+dependencies: {  }
+name: 'Species Category'
+vid: species_category
+description: ''
+weight: 0

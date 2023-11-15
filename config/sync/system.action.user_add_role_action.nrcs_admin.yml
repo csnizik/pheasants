@@ -1,0 +1,14 @@
+uuid: 9a3a0ee3-828d-46ba-9da3-f886933d77dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.nrcs_admin
+  module:
+    - user
+id: user_add_role_action.nrcs_admin
+label: 'Add the NRCS Administrator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: nrcs_admin
