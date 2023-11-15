@@ -25,7 +25,8 @@
         "wikimedia/composer-merge-plugin": "^2.0",
         "drupal/csv_importer": "^1.16",
         "drupal/openid_connect": "^1.4",
-        "drupal/pathauto": "^1.12"
+        "drupal/pathauto": "^1.12",
+        "drupal/group": "^3.2"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
