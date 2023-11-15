@@ -53,7 +53,18 @@ class ActionAdminManageForm extends FormBase {
   public function buildForm(array $form, FormStateInterface $form_state) {
     $actions = [];
     foreach ($this->manager->getDefinitions() as $id => $definition) {
-      $actions[$id] = $definition['label'];
+      try {
+        // Attempt to access the 'label' key
+        if (!isset($definition['label'])) {
+          throw new \Exception("Label not defined for action id: $id");
+        }
+        $actions[$id] = $definition['label'];
+      }
+      catch (\Exception $e) {
+        \Drupal::logger('action API')->warning($e);
+        // For now set a default label
+        $actions[$id] = $this->t('Undefined Label');
+      }
     }
     asort($actions);
     $form['parent'] = [
