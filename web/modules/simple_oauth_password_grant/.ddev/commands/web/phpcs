@@ -1,3 +1,0 @@
-#!/bin/bash
-
-composer phpcs -- --report-full --report-summary --report-source --ignore=*/.ddev/*
