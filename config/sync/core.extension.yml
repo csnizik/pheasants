@@ -1,6 +1,7 @@
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
+  action: 0
   admin_toolbar: 0
   admin_toolbar_links_access_filter: 0
   asset: 0
@@ -47,12 +48,10 @@ module:
   farm_migrate: 0
   farm_owner: 0
   farm_parent: 0
-  farm_quantity_standard: 0
   farm_role: 0
   farm_role_account_admin: 0
   farm_settings: 0
   farm_setup: 0
-  farm_ui_action: 0
   farm_ui_dashboard: 0
   farm_ui_help: 0
   farm_ui_menu: 0
@@ -65,8 +64,11 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  flexible_permissions: 0
   fraction: 0
   geofield: 0
+  gnode: 0
+  group: 0
   help: 0
   history: 0
   image: 0
@@ -109,9 +111,11 @@ module:
   toolbar: 0
   update: 0
   user: 0
+  variationcache: 0
   views_geojson: 0
   views_ui: 0
   workflows: 0
+  pathauto: 1
   views: 10
   farm: 1000
 theme:

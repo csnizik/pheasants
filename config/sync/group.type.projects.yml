@@ -1,0 +1,11 @@
+uuid: 22c4c907-07d9-48d5-810f-07ac5ca913e3
+langcode: en
+status: true
+dependencies: {  }
+id: projects
+label: Projects
+description: ''
+new_revision: false
+creator_membership: true
+creator_wizard: false
+creator_roles: {  }
